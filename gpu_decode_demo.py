@@ -44,7 +44,7 @@ with open('data/info.dat',"rb") as f:
 print "Data information:"
 print "number of shanks: {}".format(n_shanks)
 print "number of features: {}".format(n_features)
-#print "number of position grids: {}".format(len(grid))
+print "number of position grids: {}".format(len(grid))
 print "number of training spikes: {}".format(n_train_spike)
 print "compression threshold = {}".format(config.compression_threshold)
 
@@ -76,7 +76,7 @@ decoder_gpu = Decoder( mcd_behav, mcd_spikebehav, training_time,\
 # test decoding time
 print "Test CPU vs GPU decoding time (RUN):"
 print "Position grid size = {} cm ({} position bins)".format(config.grid_element_size_cm, len(grid))
-#print "number of testing spikes: {}".format(np.sum(n_spikes_run))
+print "number of testing spikes: {}".format(np.sum(n_spikes_run))
 print "decoding {} spikes with CPU...".format(np.sum(n_spikes_run))
 posterior_cpu, logpos_cpu, n_spikes_cpu, n_tt, decode_time_cpu = \
         decoder_cpu.decode_new( tetrode_inclusion_mask, config.bin_size_run, test_spikes_run, n_spikes_run, shuffle=False)

@@ -3,9 +3,9 @@
 
 compression_threshold = 1 # 0 or 1 in this demo
 # encoding - decoding options
-bin_size_run = 0.25 # in seconds
+bin_size_run = 0.1 # in seconds
 bin_size_sleep = 0.02 # in seconds
-grid_element_size_cm = 5 # size of each spatial bin
+grid_element_size_cm = 2 # size of each spatial bin
 behav_bw_cm = 8.5
 spf_bw_mV = 0.15*0.001 # scaled to be consistant with the PCA data, the unit is not mV in this case
 offset = 1e-10 # Hz
